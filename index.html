@@ -1,0 +1,683 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />         
+        <meta name="language" content="pt-br" />
+        <title>Daniela & Renato </title>
+        <meta name="description" content="Daniela & Renato" />
+        <meta name="keywords" content="" />        
+        <link rel="shortcut icon" href="http://www.danieturra.com.br/img/favicon.ico"/>
+
+        <style type="text/css" media="all">
+
+            @import url("theme/css/v2.css");
+
+
+            /* This rule is read by Galleria to define the gallery height: */
+            #galleria, #galleria-dani, #galleria-turra{height:620px;}
+
+
+        </style>
+		<script src="https://code.jquery.com/jquery-2.1.3.js" type="text/javascript"></script>
+
+        <!-- load Galleria -->
+        <script src="http://www.danieturra.com.br/galleria/galleria-1.4.2.js"></script>
+        <!-- load flickr plugin -->
+
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#countdown").countdown({
+                    date: "may 2, 2015 20:30",
+                    yearText: '',
+                    monthText: '',
+                    weekText: '',
+                    dayText: '',
+                    hourText: '',
+                    minText: '',
+                    secText: '',
+                    hourSingularText: '',
+                    minSingularText: '',
+                    secSingularText: '',
+                    template: '<span id="dia">%d</span><span id="hora">%h</span><span id="min">%i</span><span id="sec">%s</span>'
+                });
+
+                $('#pais a').click(function (event) {
+                    $('#pais .texto').slideToggle();
+                    event.preventDefault(event);
+                    return false;
+                });
+
+ $('#padrinhos a').click(function (event) {
+                    $('#padrinhos .texto').slideToggle();
+                    event.preventDefault(event);
+                    return false;
+                });
+                $('#irmas a').click(function (event) {
+                    $('#irmas .texto').slideToggle();
+                    event.preventDefault(event);
+                    return false;
+                });
+
+                $('#fotos-dani').click(function (event) {
+                    $('#galeria-dani').slideToggle();
+$('#galeria-turra').slideUp();
+
+                    // Initialize Galleria
+                    Galleria.run('#galleria-dani', {
+                        // search flickr for "galleria"
+                        flickr: 'set:72157649808448319',
+                        autoplay: 7000,
+                        lightbox: true,
+			max: 130,
+                        flickrOptions: {
+                            // sort by interestingness
+                            sort: 'interestingness-desc'
+                        }
+                    });
+
+
+
+                    event.preventDefault(event);
+                    return false;
+                });
+
+
+                $('#fotos-turra').click(function (event) {
+                    $('#galeria-turra').slideToggle();
+                    $('#galeria-dani').slideUp();
+
+                    // Initialize Galleria
+                    Galleria.run('#galleria-turra', {
+                        // search flickr for "galleria"
+
+                        flickr: 'set:72157650217028661',
+                        autoplay: 7000,
+			max: 130,
+                        lightbox: true,
+                        flickrOptions: {
+                            // sort by interestingness
+                            sort: 'interestingness-desc'
+                        }
+                    });
+                    event.preventDefault(event);
+                    return false;
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+        <div id="site">
+            <div id="topo">
+                <div class="center-site">
+                    <ul id="menu-left">
+
+                        <li><a href="#sobre-o-casal">Sobre o Casal</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#pais">Pais</a></li>
+                        <li><a href="#irmas">Irmãs</a></li>
+                        <li><a href="#padrinhos2">Padrinhos</a></li>
+                    </ul>
+
+                    <ul id="menu-right">
+                        <li class="position"><a href="#o-casamento2">O casamento</a></li>
+                        <!--<li><a href="#rsvp">Rsvp</a></li>-->
+                        <li><a href="#lista-de-presentes">Lista de<br/>Presentes   </a></li>
+                        <li><a href="#daminhas">Pajens e<br/>Daminhas    </a></li>
+                        <li class="position"><a href="#contato">Comentários</a></li>
+
+                    </ul>
+
+                    <p id="data-topo">02 Maio, 2015</p>
+
+                </div>
+            </div>
+            <div id="conteudo">
+                <br /><br /><br /><br />
+                <div id="banner">
+                    <p>Dani (Daniela) e Turra (Renato)</p>
+                </div>
+
+                <div id="contador">			
+                    <p id="countdown" class="time fix"></p>
+                </div>
+
+                <div id="sobre-o-casal">
+
+                    <div class="left">
+                        <img src="theme/img2/dani.jpg" alt="Dani" />
+                        <h2>Daniela</h2>
+                        <a href="#" id="fotos-dani">Ver fotos</a>
+
+                    </div>
+
+                    <div class="right">
+                        <img src="theme/img2/turra.jpg" alt="Turra" />
+                        <h2>Renato</h2>	
+                        <a href="#" id="fotos-turra">Ver fotos</a>
+                    </div>
+                    <div class="center"><p>Ainda que eu falasse as línguas dos homens e dos anjos, se não tiver amor, sou como o bronze que soa, ou como o címbalo que retine. Mesmo que tivesse o dom da profecia, e conhecesse todos os mistérios e toda a ciência; Mesmo que tivesse toda a fé, a ponto de transportar montanhas, se não tiver amor, não sou nada. Ainda que distribuísse todos os meus bens em sustento dos pobres, e ainda que entregasse o meu corpo para ser queimado, se não tiver amor, de nada valeria!</p> 
+                        <p> O amor é paciente, o amor é bondoso, não tem inveja. O amor não é orgulhoso. </p>
+                        <p>Não é arrogante. Nem escandaloso. Não busca os seus próprios interesses, não se irrita, não guarda rancor, não se alegra com injustiça, mas se rejubila com a verdade. Tudo desculpa, tudo crê, tudo espera, tudo suporta.</p>
+                        <span class="fonte">(I Cor 13, 1-7)</span></div>
+
+                    <div class="clear"></div>
+                </div>
+
+
+                <div id="galeria-dani">
+                    <h2>Fotos Daniela</h2>
+                    <div id="galleria-dani"></div>
+                    <!--<a id="mais-fotos">Ver mais fotos</a>-->
+                </div>
+
+                <div id="galeria-turra">
+                    '<h2>Fotos Turra</h2>
+                    <div id="galleria-turra"></div>
+                    <!--<a id="mais-fotos">Ver mais fotos</a>-->
+                </div>
+
+
+                <div id="sobre-o-casal-2">
+                    <h2>Sobre o casal</h2>
+
+                    <div class="texto">
+
+
+                        <p> Estamos aqui para dividir um pouco da nossa história de amor com todos vocês, familiares e amigos, que nos acompanham desde o começo e até mesmo bem antes que eu e o Turra nos encontrássemos nessa estrada da vida!!</p>
+                        <p> Quem conviveu com a gente desde o comecinho de tudo sabe que não foi fácil...rs mas olha só que benção de DEUS, estamos aqui agora, praticamente 10 anos depois, pertinho do nosso casamento, nosso grande dia!! E para vocês que estão vivendo esse sonho e compartilhando cada momento e cada detalhe com a gente.. aqui vai um pouquinho de nós...</p>
+                        <p> Nós sempre nos encontrávamos em festas, churrascos, aniversários e tudo mais, mas nunca havíamos conversado, tínhamos amigos em comum, frequentávamos os mesmos lugares.. enfim, eramos dois jovens vivendo na mesma cidade mas com pensamentos diferentes, apenas uma coisa era igual, o coração fechado, sem vontade e com medo do amor...!!</p>
+                        <p> A Dani tinha 18 anos, estava apaixonada pela irmãzinha que tinha acabado de nascer, gostava de festa, sair, dar risada, se divertir com as amigas e as vezes até sonhava com um príncipe..rs Já o Turra tinha 20 anos, gostava também de tudo isso, mas ele queria aproveitar a vida sem pensar em relacionamentos sérios..rs ele até já tinha tentado conhecer ela melhor, mas ela não deu chance, achava que eles eram muito diferentes...</p>
+                        <p> Foi que em um desses encontros de olhares a Dani resolveu reparar melhor naquele moço...rsrss mas também não falou nada pra ninguém. Mas mau sabia eles, que naquele momento DEUS já estava agindo na vida dos dois, colocando uma amiga entre eles, que deu um jeitinho, inventou algumas histórias...rsrss para que finalmente eles pudesse se conhecer e conversar..!!</p>
+                        <p> E foi aí que tudo começou, no dia 26 de março de 2005 marcamos nosso encontro, em um baile que aconteceria na cidade, era o Baile da Aleluia!! Foi mais ou menos as 2:30 da manhã quando nos encontramos, nunca vamos nos esquecer da música que tocou em nosso primeiro beijo... foi um encontro realmente inesquecível.. presente do céu... se fechamos nossos olhos podemos lembrar de cada detalhe, como se estivéssemos lá ainda.. </p>
+                        <p> Nunca tínhamos conversado, mas naquela noite a sensação era que já nos conhecíamos a vida toda... a gente costuma brincar dizendo q foi "amor a primeira conversa"...rs ficamos juntos o resto da noite no baile, conversando, dando risada... e nos outros dias também nos encontramos e inevitavelmente fomos criando uma relação. </p>
+                        <p> Para Dani era um namoro, mas para o Turra, ele dizia que ainda não estava preparado para isso...rs Quem nos acompanhou sabe tudo o que passamos, mas Deus mostrou mais uma vez sua presença em nossas vidas... pois muito antes que nossos pais sonhassem com a nossa existência, Ele já havia planejado tudo, tinha traçado que seriamos um para outro, por toda vida. </p>
+                        <p> Entre idas e vindas durante 1 ano mais ou menos, graças a essa força vinda do céu, persistimos mesmo em meio a tanta dificuldade.. tantos puxões de orelha que levamos de nossas famílias, amigos e amigas...rs Mas tinhamos mesmo que passar por tudo isso, para que hoje pudessemos sentir essa felicidade plena... tudo foi aprendizado e serviu para que nosso amor se tornasse forte e eterno... pois esse sentimento resistiu a tudo e se fortaleceu com o tempo.. afinal, toda história de amor é assim!! </p>
+                        <p> Nesses últimos 10 anos Vivemos os melhores dias, meses... a melhor época de nossas vidas um ao lado do outro.. amadurecemos, nos conhecemos, aprendemos a conviver e admirar até mesmo os defeitos um do outro, passamos a fazer parte de uma só família.. </p>
+                        <p> Acompanhando cada momento de tristesa e alegria.. nos tornamos amigos, confidentes, nos respeitamos, aprendemos a ouvir antes de falar, passamos a nos maravilhar com as nossas conquistas, viajamos, nos divertimos, fomos em festas, dançamos, brincamos, corremos até cansar, andamos de mãos dadas, conhecemos pessoas, nos despedimos de algumas... comemos, engordamos..rs estudamos, trabalhamos, rimos das mesmas coisas, brigamos, perdoamos e sempre um do lado do outro, dando apoio quando precisavamos, fomos as nossas melhores companhias, passamos a ser praticamente um só, a dor de um é a dor do outro e a felicidade também!!</p>
+                        <p> E hoje podemos dizer sem dúvida que amamos cada detalhe, cada fio de cabelo, cada chatisse e cada bondade, cada imperfeição do outro!! Não lembramos como era nossas vidas antes de 2005, parece que não existia Daniela sem Renato e nem Renato sem Daniela!! Passamos a sonhar e viver os mesmos sonhos e traçamos os mesmos objetivos.. estamos subindo cada degrau juntos, batalhando para realizar tudo!!</p>
+                        <p> E a melhor parte, o principal que conquistamos e descobrimos juntos foi o amor de Deus por nós, pois foi quando tivemos esse encontro pessoal com Jesus e entregamos toda nossa vida a Ele, e consagramos a nossa vida a Maria, que tudo foi abençoado, e tudo passou a ter sentido em nossos corações!!</p>
+                        <p> Hoje somos pessoas diferentes, melhores e muito mais realizados, por isso rezo para que sempre tenhamos essa intercessão do Espirito Santo de Deus.. para que tudo caminhe sempre nesse caminho sonhado e trilhado por Ele!! </p>
+                        <p> E foi assim que no começo de 2013 marcamos nossa data de casamento, para o dia 02 de maio de 2015, e estamos mais felizes do que nunca, muitos preparativos, sonhos e ansiedade aumentado, mas que seja sempre cada detalhe abençoado!! </p>
+                        <p> Daqui um tempo nosso grande dia vai chegar.. o dia mais feliz de nossas vidas e queremos compartilhar com todas pessoas que amamos nossa felicidade, que não é pouca...rs por isso deixamos aqui um poquinho da nossa história de amor, que parece um sonho, mas é real!!</p>
+
+                        <p style="text-align: center; font-size: 22px;">"... Eu agradeço a DEUS o dia em que peguei na sua mão..."</p>
+
+                    </div>
+
+                </div>
+
+                <div id="galeria">
+
+                    <div id="galleria"></div>
+                    <!--<a id="mais-fotos">Ver mais fotos</a>-->
+                </div>
+
+
+                <div id="pais">
+
+                    <h2>Sobre os Pais</h2>
+                    <div class="esq">
+                        <img src="theme/img2/pais-turra.jpg" />
+                        <h3>Sônia e Walter  </h3>
+                        <a href="#">Ver mensagem</a>
+
+                        <div class="texto">
+                            <p>A vocês Pai e Mãe que me deram a vida e me ensinaram a vivê-la com dignidade, não bastaria um obrigado. A vocês Pai e Mãe, que iluminaram os meus caminhos com afeto e dedicação para que eu passasse por eles sem medo e cheio de esperança, não bastaria um muito obrigado. A vocês, que se doaram por inteiros e renunciaram aos seus sonhos, para que, muitas vezes, eu pudesse realizar os meus. A vocês, que estiveram sempre comigo, presentes ou no coração, não bastaria dizer Obrigado e sim um Muito mais Muito Obrigado!!! Amo Vocês Ontem Hoje Amanhã e Sempre a minha Vida é Vocês.</p>
+                            <p>Uma nova fase vai se iniciar em nossas vidas, tanto na minha como na de vocês, estou dando um grande passo em rumo a esse sonho que eu sempre tive chamado casamento e com uma noiva Linda escolhida por Deus para mim, e com certeza eu não chegaria até aqui se não fosse o apoio e dedicação de vocês. </p>
+                            <p>Sei também, que a partir do dia 02/05/2015... Deixarei o conforto de nossa casa, a comidinha pronta, a roupa passada, o abraço inesperado ao chegar as vezes cansado do trabalho... Deixarei o meu "NINHO" para alcançar voos em novos ares, mas continuarei sempre precisando de vocês. Só de Escrever essa mensagem já estou sentindo falta do que deixarei para trás, mas sei também que Deus reserva não só para mim, mas como para a Dani e Para vocês também um futuro iluminado e abençoado por Deus. Já estou arrependido de ter aproveitado tão pouco a companhia de vocês, de não termos conversado mais, abraçado mais, dito mais a vocês o quanto são importantes e o quanto eu AMO VOCÊS o quanto devo toda a minha Vida a Vocês, as palavras às vezes não conseguem expressar o tamanho do meu Amor por vocês Pai e Mãe, mas sei também que essa mensagem não é uma despedida, Graças a Deus continuarei morando na mesma cidade e vendo vocês todos os dias.	</p>
+                            <p>Mas quero aproveitar esse espaço para lhes dizer, pois se há um amor verdadeiro e eterno, esse amor é de PAI E MÃE. Sou parte de vocês, e vocês fazem e sempre farão parte de mim. Meu jeito de ser, meus valores, minha educação e até meus objetivos vem da forma como vocês me criaram. E pela minha criação, Eu só tenho que agradecer Pai e Mãe se hoje sou uma pessoa Feliz, iluminada e Abençoada por Deus devo tudo a Vocês que me ensinaram sempre o Caminho Certo!!! Tenho orgulho em falar que sou filho do Walter e da Sônia, em trazer o sobrenome Turra e Bueno que são minhas origens. Obrigado por tanto amor, tanta dedicação, tanto carinho e cuidado, pela paciência e pelos ensinamentos!!! Desculpa à ausência, a impaciência, a falta de compreensão muitas vezes...!</p>
+                            <p>AMOOOOO MUITO VOCÊS!!! VOCÊS SÃO TUDO TUDO PRA MIM MEUS PAIS!! AMOOOO VOCÊS ETERNAMENTE!!!  </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="dir">                  
+                        <img src="theme/img2/pais-dani.jpg" />
+
+                        <h3>Nair e Evaldo</h3>
+                        <a href="#">Ver mensagem</a>
+                        <div class="texto">                        	
+                            <p> Mãe e Pai...</p>
+                            <p>O que dizer sobre vocês??!!</p>
+                            <p>Tudo o que eu falar ou escrever é pequeno, é minimo comparado com o tamanho do amor e da gratidão que sinto por vocês!!</p>
+                            <p>Devo minha vida, minha existência, minha saúde, educação, felicidade... enfim devo tudo o que sou e tudo o que tenho a vocês.. pois sem vocês eu não existiria, se vocês dois não tivessem dado esse SIM a JESUS pelo dom da vida e ter me permitido nascer eu não estaria aqui!! E para ser sincera, DEUS não poderia ter escolhido melhores pessoas para me gerar e criar, sou muito abençoada por ter vocês como meus pais.. conheci o que é o AMOR através de vocês.. anjos em minha vida!!</p>
+                            <p>Por isso quero agradecer primeiramente a DEUS por ter me dado vocês como meu pai e minha mãe.. foi com vocês que aprendi a falar, andar, tive a melhor infância do mundo, sempre com minhas melhores companhias que eram vocês, tive as melhores irmãs, minhas amigas e companheiras pra toda vida, e tudo graças a DEUS e a vocês!!</p>
+                            <p>Não sei o que dizer, não sei o que fazer para poder agradecer por tudo, por todos esses anos de dedicação, de educação, de amizade, de sim e de não, de broncas que me ajudaram a crescer e amadurecer, de palavras amigas, palavras que confortam, que aquecem meu coração, que me fizeram ser uma pessoa melhor, palavras que levarei por toda vida, lembranças que são só minhas, e posso garantir que são as melhores!!</p>
+                            <p>Agradeço por vocês serem assim, do jeitinho que vocês são, sempre um completando o outro, tudo o que eu preciso encontro em vocês dois.. agradeço por acreditarem em mim, mesmo quando ninguém mais acreditava.. agradeço por terem me proporcionado viver nessa família maravilhosa, ao lado de pessoas que são anjos em minha vida.. agradeço de coração e por toda minha vida vou agradecer, não vou me cansar!!</p>
+                            <p>AMO VOCÊ MÃE.. minha amiga, confidente, meu amor, minha companheira, pessoa leal e sincera, que chora e sorri comigo, sua dor é minha dor e sua falicidade é a minha... obrigada por tudo, pelo abraço acolhedor e aconchegante, pelo sorriso que me da vida, que é a luz que me guia.. TE AMO MEU GRANDE E ETERNO AMOR, MINHA RAINHA, A MAIS LINDA E MELHOR DE TODAS AS MÃES, obrigada por tudo!!</p>
+                            <p>AMO VOCÊ PAI.. meu amigo, companheiro, herói, meu papai noel...rs obrigada por ser assim, esse grande Homem, esse exemplo, diferente de todos os outros, obrigada pela paciência, pelo abraço apertado, obrigada por ser você.. TE AMO MEU PRIMEIRO AMOR, MEU ANJO LINDO, MEU REI.. O MAIS LINDO E MELHOR PAI DO MUNDO!!</p>
+                            <p>Vocês dois são exemplos que quero seguir por toda vida e em meu casamento, foram meus primeiros catequistas, foi através de vocês que conheci o céu.. Mãe representante de MARIA, minha mãezinha.. Pai representante de JOSÉ, meu paizinho.. serei eternamente grata por ter vocês comigo, por terem doado suas vidas para nos dar conforto, carinho e amor!!</p>
+                            <p>OBRIGADA DEUS, por ter me dado eles como meus pais, rezo para que os abençoem e que JESUS e MARIA estejam com vocês por todo caminho!!</p>
+
+                            <p>AMO VOCÊS.. MINHA VIDA, MEU AMOR ETERNO.. Nair e Evaldo(Xexéu)!!</p>
+                        </div>
+
+                    </div>
+
+                    <div class="clear"> </div>
+                </div>  
+
+                <br/>
+
+                <div id="irmas">
+
+                    <h2>Sobre as Irmãs</h2>
+
+
+                    <div class="img">
+                        <img src="theme/img2/irmas-dani.jpg" />
+                        <img src="theme/img2/irmas-turra.jpg" />
+
+                    </div>
+                    <a href="#">Ver mensagem</a>
+                    <div class="texto">
+                        <p>Danila, Duda e Fernanda</p>
+
+                        <p>Agradecemos a DEUS todos os dias pela vida de vocês, nossas irmãs!!</p>
+                        <p>Nossos amores, pedacinhos da gente.. os irmãos são nossos primeiros e melhores amigos, aqueles com quem sabemos que podemos contar em todas as horas,  aqueles que DEUS enviou  para nossas vidas para nos dar força, encher de luz e alegria todos os nossos dias... irmãos são aqueles que nos ligam ao nosso passado, a nossa família, as nossas histórias mais intimas!!</p>
+
+                        <p>E tão perto de realizar um dos nossos maiores sonhos, não poderiamos de deixar aqui os nossos agradecimentos a vocês, por todas as lembranças, brincadeiras, artes, broncas, choros, brigas, reconciliação, brinquedos compartilhados, ralados nos joelhos, choro de madrugada, fraldas trocadas, idas e vindas da escola, da rua, das baladinhas... enfim.. obrigada irmãs, por cada palavra dita, por cada abraço, cada beijo... por tudo!! Agradecemos primeiramente a DEUS por ter nos dado vocês como nossas irmãs.. as melhores que poderiamos ter!!</p>
+
+                        <p>E é bênção divina poder ter vocês ao nosso lado... AMAMOS VOCÊS</p>
+                    </div>
+
+
+
+	        </div>   
+                <br/>
+<div id="padrinhos2"></div>
+
+                <br/><br/><br/><br/>
+                <div id="padrinhos">
+                    <h2>Padrinhos</h2>
+
+                    <a href="#">Ver mensagem</a>
+                    <div class="texto">
+                       <p> Padrinhos são anjos que DEUS coloca em nosso caminho, e são identificados rapidamente por nossos corações!!</p>
+<p>São aquelas pessoas que estaram rezando por nós por toda vida, cuidando para que nossa amizade e nosso amor esteja cada vez mais forte..!!.. enfim, escolhemos 22 casais para estarem ao nosso lado, pertinho de nós nesse dia que DEUS escolheu pra gente.. entre  eles amigos que são mais que irmãos, irmãos e parentes que são muitoooo mais que amigos !! </p>
+<p>Ohhhhh 22 casais??rsrss pois é.. e confesso que não foi fácil, pois se pudessemos escolheriamos uns 30..rsrss são tantas pessoas queridas e amadas, que fizeram parte da nossa vida e da nossa história.. mas as pessoas que escolhemos de uma maneira ou de outra representarão todas as outras que também estarão presentes para partilharem cada momento!!</p>
+
+<p>Amamos vocês!!
+que JESUS e MARIA passem a frente de tudo..</p>
+<p>Grande beijoooooo**</p>
+                    </div>
+
+<br/><br/><br/>
+                    <div class="left" style="border-right:2px solid #8f5995; width:48%;">
+
+                    		<ul>
+
+                    		<li>
+                    				<div class="esq"><img src="padrinhos/anderson.jpg">Anderson</div>
+                    				<div class="dir"><img src="padrinhos/danila.jpg">Danila</div>
+                    				<span class="block"></span>
+                   				</li>
+
+                   					<li>
+                    				<div class="esq"><img src="padrinhos/braz.jpg">Braz</div>
+                    				<div class="dir"><img src="padrinhos/julia.jpg">Julia</div>
+                    				<span class="block"></span>
+                   				</li>
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/claudinei.jpg">Claudinei</div>
+                    				<div class="dir"><img src="padrinhos/maria.jpg">Maria</div>
+                    				<span class="block"></span>
+                   				</li>
+
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/tiago.jpg">Tiago</div>
+                    				<div class="dir"><img src="padrinhos/cida.jpg">Cida</div>
+                    				<span class="block"></span>
+                   				</li>
+
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/renato-2.jpg">Renato</div>
+                    				<div class="dir"><img src="padrinhos/fabiola.jpg">Fabíola</div>
+                    				<span class="block"></span>
+                   				</li>
+
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/bruno.jpg">Bruno</div>
+                    				<div class="dir"><img src="padrinhos/natalia.jpg">Natália</div>
+                    				<span class="block"></span>
+                   				</li>
+
+
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/renato.jpg">Renato</div>
+                    				<div class="dir"><img src="padrinhos/jovana.jpg">Jovana</div>
+                    				<span class="block"></span>
+                   				</li>
+
+                   				
+
+
+                    			<li>
+                    				<div class="esq"><img src="padrinhos/carlinhos.jpg">Carlinhos</div>
+                    				<div class="dir"><img src="padrinhos/thairine.jpg">Thairine</div>
+                    				<span class="block"></span>
+                   				</li>
+
+                   				
+
+								
+
+
+                   				
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/marcos.jpg">Marcos</div>
+                    				<div class="dir"><img src="padrinhos/ellen.jpg">Ellen</div>
+                    				<span class="block"></span>
+                   				</li>
+
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/junior.jpg">Junior</div>
+                    				<div class="dir"><img src="padrinhos/viviana.jpg">Viviana</div>
+                    				<span class="block"></span>
+                   				</li>
+
+                   				
+
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/giovanni.jpg">Giovanni</div>
+                    				<div class="dir"><img src="padrinhos/jeanessa.jpg">Jeanessa</div>
+                    				<span class="block"></span>
+                   				</li>
+
+
+                   				
+
+                    		</ul>
+
+
+                    </div>
+                    <div class="right">
+                    <ul>
+
+                    <li>
+                    				<div class="esq"><img src="padrinhos/torati.jpg">Torati</div>
+                    				<div class="dir"><img src="padrinhos/fernanda.jpg">Fernanda</div>
+                    				<span class="block"></span>
+                   				</li>
+
+
+<li>
+                    				<div class="esq"><img src="padrinhos/arnaldo.jpg">Arnaldo</div>
+                    				<div class="dir"><img src="padrinhos/ivani.jpg">Ivani</div>
+                    				<span class="block"></span>
+                   				</li>
+
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/lourival.jpg">Lourival</div>
+                    				<div class="dir"><img src="padrinhos/edna.jpg">Edna</div>
+                    				<span class="block"></span>
+                   				</li>
+
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/dirceu.jpg">Dirceu</div>
+                    				<div class="dir"><img src="padrinhos/edneia.jpg">Ednéia</div>
+                    				<span class="block"></span>
+                   				</li>
+
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/gerson.jpg">Gerson</div>
+                    				<div class="dir"><img src="padrinhos/noely.jpg">Noely</div>
+                    				<span class="block"></span>
+                   				</li>
+<li>
+                    				<div class="esq"><img src="padrinhos/leonardo.jpg">Leonardo</div>
+                    				<div class="dir"><img src="padrinhos/debora.jpg">Débora</div>
+                    				<span class="block"></span>
+                   				</li>
+
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/junior-2.jpg">Junior</div>
+                    				<div class="dir"><img src="padrinhos/paula.jpg">Paula</div>
+                    				<span class="block"></span>
+                   				</li>
+
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/fernando.jpg">Fernando</div>
+                    				<div class="dir"><img src="padrinhos/fulvia.jpg">Fúlvia</div>
+                    				<span class="block"></span>
+                   				</li>
+
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/rafael.jpg">Rafael</div>
+                    				<div class="dir"><img src="padrinhos/jaqueline.jpg">Jaqueline</div>
+                    				<span class="block"></span>
+                   				</li>
+
+
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/fernando-2.jpg">Fernando</div>
+                    				<div class="dir"><img src="padrinhos/josi.jpg">Josi</div>
+                    				<span class="block"></span>
+
+                   				</li>
+
+
+
+
+                   				<li>
+                    				<div class="esq"><img src="padrinhos/fabio.jpg">Fábio</div>
+                    				<div class="dir"><img src="padrinhos/erica.jpg">Érica</div>
+                    				<span class="block"></span>
+                   				</li>
+
+
+
+                   				
+                   				
+
+                   				
+                    </ul>
+
+                    </div>
+                    <div class="clear"></div>
+
+
+                </div>
+<span id="daminhas"><span>
+<br />
+<br />
+<br /><br /><br />
+
+
+
+<div id="padrinhos">
+                    <h2>Pajens e Daminhas</h2>
+
+
+                    <div class="textos" style=" color: #7a7a7a;
+
+    font-size: 15px;
+    line-height: 22px;
+    padding: 30px 30px 0;">
+                       <p> Crianças são anjos de DEUS!! Por isso escolhemos esses amores para estarem ao nosso lado, iluminando ainda mais esse dia!! amamos vocês</p>
+                    </div>
+
+<br/><br/><br/>
+                    <div class="left" style="width:48%; margin:0 auto; float:none;">
+
+                    		<ul>
+
+                    		<li>
+                    				<div class="esq"><img src="pajens/raul.jpg">Raul</div>
+                    				<div class="dir"><img src="pajens/gabriel.jpg">Gabriel</div>
+                    				<span class="block"></span>
+                   		</li>
+
+<li>
+                    				<div class="esq"><img src="pajens/duda.jpg">Maria Eduarda</div>
+                    				<div class="dir"><img src="pajens/fernanda.jpg">Fernanda</div>
+                    				<span class="block"></span>
+                   		</li>
+
+
+<li>
+                    				<div class="esq"><img src="pajens/bruna.jpg">Bruna</div>
+                    				<div class="dir"><img src="pajens/luana.jpg">Luana</div>
+                    				<span class="block"></span>
+                   		</li>
+</ul>
+                   		
+                    <div class="clear"></div>
+
+
+                </div>
+</div>
+
+<span id="o-casamento2"></span>
+
+<br /><br /><br />
+
+
+                <div id="o-casamento">
+
+                    <div class="center-site">
+                        <div class="left">
+                            <h2>Cerimônia e Recepção</h2>
+
+                            <div>
+                                <p>A Cerimônia será realizada na Igreja Matriz de São José, no dia 02, de maio de 2015, às 20h15.</p>
+                                <p>Logo após os convidados serão recepcionados no Clube das Bandeiras.</p>
+
+                                <br /><br /><br /><br />
+                                <img src="theme/img2/cerimonia.jpg"   />
+                            </div>
+
+                        </div>
+
+                        <div class="right">
+                            Cerimônia<br/>
+                            <img src="theme/img2/igreja.jpg" height="150"  />
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.5608481682075!2d-50.87894999999993!3d-21.797251000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949425d7af260f0d%3A0xf03fa55ac9a3d6c4!2sIgreja+Matriz!5e0!3m2!1spt-BR!2sbr!4v1420762527569" width="300" height="150" frameborder="0" style="border:0"></iframe>
+
+
+                            <div class="clear"></div>
+                            Recepção<br/>
+                            <img src="theme/img2/clube.jpg" height="150"  />
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.568527727696!2d-50.86817400000002!3d-21.796953999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949425c08a2d7f6b%3A0xe396ec048edb4173!2sClube+das+Bandeiras!5e0!3m2!1spt-BR!2sbr!4v1420762664728" width="300" height="150" frameborder="0" style="border:0"></iframe>
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <div id="lista-de-presentes"><br /><br /><br />
+                    <h2>Lista de Presentes</h2>
+                    <a title="Acesse o site" style="float:left;width:45%; text-align:center;" href="https://carrinho.americanas.com.br/lista-de-casamento/pages/BridalRegistryHomePage/bridalRegistryId/01-02-10598128/" target="_black" ><img src="theme/img2/logo-americanas.jpg" /></a>
+
+  <a style="float:left;width:45%; text-align:center;" href="https://www.querodecasamento.com.br/lista-de-casamento/daniela-renato/" target="_black" title="Acesse o site"><img src="magazine-luiza-logo.jpg" /></a>	
+
+<div style="clear:both; display:block"></div>
+<br /><br /><br />
+		     <a style="float:left;width:45%; text-align:center;" href="http://poppresentes.com.br/" target="_black" title="Acesse o site"><img src="pop.jpg" /></a>	
+
+
+ <a style="float:left;width:45%; text-align:center;" href="https://www.facebook.com/casaflor588?fref=ts" target="_black" title="Acesse o site"><img src="casaflor.jpg" />
+	<span style="display:none; font-size:12px;"> Avenida Presidente Vargas, nº 588<br /> Telefone (18) 3528-7077 </span></a>
+
+<div style="clear:both; display:block;"></div>
+
+                </div>
+
+
+
+
+<span id="contato2"></span>
+                <div id="contato">
+
+                    <h2>Deixe Seu Comentário</h2>
+
+
+<!-- Begin Comments JavaScript Code --><script type="text/javascript" async>function ajaxpath_54b6e524ad809(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_54b6e524ad809"></div>');fcs_54b6e524ad809=document.createElement('script');fcs_54b6e524ad809.type="text/javascript";fcs_54b6e524ad809.src=ajaxpath_54b6e524ad809((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=54b6e524ad809&s=&Size=10#!54b6e524ad809");setTimeout("document.getElementById('fcs_div_54b6e524ad809').appendChild(fcs_54b6e524ad809)",1);})();</script><noscript><div></div></noscript><!-- End Comments JavaScript Code -->
+
+                   <!-- <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                        var disqus_shortname = 'danieturra'; // required: replace example with your forum shortname
+
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function () {
+                            var dsq = document.createElement('script');
+                            dsq.type = 'text/javascript';
+                            dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
+                </div>
+
+                <div id="rodape">
+                    <img src="theme/img2/logo-rodape.jpg" />
+                </div>
+            </div>
+
+        </div>
+
+       <!-- <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'danieturra'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var s = document.createElement('script');
+                s.async = true;
+                s.type = 'text/javascript';
+                s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+            }());
+        </script>-->
+
+        <!-- SCM Music Player http://scmplayer.net -->
+        <script type="text/javascript" src="http://scmplayer.net/script.js" 
+        data-config="{'skin':'skins/black/skin.css','volume':50,'autoplay':true,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':[
+
+
+        {'title':'Minha Essência','url':'http://www.danieturra.com.br/mp3/Minha-Essencia.mp3'},
+        {'title':'Rude Walk off the Earth','url':'http://www.danieturra.com.br/mp3/danieturra/Rude-Walk-off-the-Earth.mp3'},
+
+
+        {'title':'Halleelujah','url':'http://www.danieturra.com.br/mp3/Hallelujah.mp3'},
+        {'title':'Just The Way You Are','url':'http://www.danieturra.com.br/mp3/Just-The-Way-You-Are.mp3'},
+        
+        {'title':'C Céu Se Abre','url':'http://www.danieturra.com.br/mp3/O-Ceu-Se-Abre.mp3'},
+        {'title':'Sou Teu Anjo','url':'http://www.danieturra.com.br/mp3/Sou-Teu-Anjo.mp3'},
+        {'title':'Use Somebody (feat Hannah Trigwell)','url':'http://www.danieturra.com.br/mp3/Use-Somebody-feat-Hannah-Trigwell.mp3'},
+        
+      
+        ]}" ></script>  
+        
+        <script>
+            $(document).ready(function () {
+            // Load the classic theme
+            Galleria.loadTheme('http://www.danieturra.com.br/galleria/themes/classic/galleria.classic.min.js');
+
+            // Initialize Galleria
+            Galleria.run('#galleria', {
+                // search flickr for "galleria"
+                flickr: 'set:72157649815326418',
+                autoplay: 7000,
+		max: 130,
+                lightbox: true,
+                flickrOptions: {
+                    // sort by interestingness
+                    sort: 'interestingness-desc'
+                }
+            });
+});
+
+
+        </script>
+
+        <script src="http://www.danieturra.com.br/galleria/plugins/flickr/galleria.flickr.js"></script>
+        <script src="http://www.danieturra.com.br/script/jquery.jcountdown.js" type="text/javascript"></script> 
+
+    </body>
+</html>		

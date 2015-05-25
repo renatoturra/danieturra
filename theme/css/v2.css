@@ -1,0 +1,184 @@
+@import url("print.css") print;
+@import url("reset.css");
+@import url("ie.css");
+
+@font-face {
+    font-family: 'cinzelregular';
+    src: url('Cinzel-Regular-webfont.eot');
+    src: url('Cinzel-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('Cinzel-Regular-webfont.woff') format('woff'),
+        url('Cinzel-Regular-webfont.ttf') format('truetype'),
+        url('Cinzel-Regular-webfont.svg#cinzelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'great_vibesregular';
+    src: url('greatvibes-regular-webfont.eot');
+    src: url('greatvibes-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('greatvibes-regular-webfont.woff') format('woff'),
+        url('greatvibes-regular-webfont.ttf') format('truetype'),
+        url('greatvibes-regular-webfont.svg#great_vibesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('lato-regular-webfont.eot');
+    src: url('lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('lato-regular-webfont.woff') format('woff'),
+        url('lato-regular-webfont.ttf') format('truetype'),
+        url('lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.center-site { margin: 0 auto; width: 1170px;}
+#topo {  font-family: cinzelregular; color:#fff; background:url(../img2/bg-top.png) repeat-x;height: 115px; position: fixed; z-index: 99; width: 100%}
+#conteudo {top:-10px; z-index: 97; position: relative;}
+
+#topo li {  display: inline-block; }
+
+#menu-left{ float: left; width: 396px; margin-top: 24px;}
+#menu-left li { margin-right: 12px; }
+
+#menu-right{ float: right; width: 450px; margin-top: 24px;}
+#menu-right li { margin-left: 12px; }
+
+
+#menu-right li.position
+{
+    position: relative !important;
+    top: -12px !important;
+}
+
+#menu-left a, #menu-right a { color:#fff;font-size: 14px;}
+#menu-left a:hover, #menu-right a:hover { text-decoration: underline;}
+
+#data-topo {text-align: center; font-size: 38px; padding-top: 13px}
+
+#banner { background:url(../img2/banner.jpg) center top;  height: 681px;margin:0 auto;  text-indent: -9999px;}
+
+#contador { margin:0 auto; height: 400px; background:#8f5995 url(../img2/contador.jpg) center; }
+
+#countdown { font-family: great_vibesregular; color:#fff; font-size: 102px; padding-top: 140px;margin: 0 auto; width: 700px; }
+
+h3 {color:#8f5995; font-family: great_vibesregular; font-size: 44px; text-align: center}
+
+
+#countdown #ano{position: relative;}
+#countdown #hora{position: relative;left: 48px;}
+#countdown #min{position: relative;left: 120px;}
+#countdown #sec{position: relative;left: 185px;}
+
+#sobre-o-casal, #sobre-o-casal-2 { margin:0 auto;width: 1160px;}
+#sobre-o-casal-2 {padding-top:60px;}
+
+#sobre-o-casal-2 .texto {  font-family: latoregular; color:#7a7a7a; font-size:14px; line-height: 20px; text-align: center }
+#sobre-o-casal-2 .texto p {  margin-bottom: 20px}
+
+#sobre-o-casal h2, #sobre-o-casal-2 h2 { font:35px cinzelregular; color:#8f5995; text-align: center;padding-bottom: 20px;}
+
+#sobre-o-casal .left, #sobre-o-casal .right {width: 305px; color:#7a7a7a; font-family: latoregular; font-size: 16px;text-align: center; line-height: 24px}
+
+#sobre-o-casal .left {float: left;}
+#sobre-o-casal .right {float: right;}
+
+#sobre-o-casal .center {text-align: center;  font-family: latoregular;  color:#7a7a7a; font-size: 14px; line-height: 22px; padding-top: 62px}
+#sobre-o-casal .center p {padding-bottom: 15px; }
+#sobre-o-casal .fonte { font-size: 11px; display: block; color:#8f5995;}
+
+#mais-fotos,#mais-padrinhos {border-radius: 25px; background-color: #8f5995; display: block; margin: 25px auto; padding: 10px; width: 150px; 
+                             color: #fff; text-align: center; font-family: cinzelregular; 
+}
+.clear {clear: both; display:block;}
+#galeria,#galeria-dani, #galeria-turra {padding-top: 60px; width: 1160px; margin: 0 auto;}
+
+#galeria-dani h2, #galeria-turra h2 { font:35px cinzelregular; color:#8f5995; text-align: center;padding-bottom: 20px;}
+
+#mais-fotos:hover,#mais-padrinhos:hover { background-color: #fff;color:#8f5995; border: solid 1px #8f5995; cursor: pointer;}
+
+
+#padrinhos {width: 1160px; margin:0 auto;}
+#padrinhos h2 { font:35px cinzelregular; color:#8f5995;text-align: center;padding: 30px 0;}
+
+
+#padrinhos li {height: 220px;display: block; overflow: hidden;}
+#padrinhos li div { float: left; width: 49%; text-align: center; font:19px/38px cinzelregular; color:#8f5995;}
+#padrinhos li div img { display: block;margin: 0 auto;}
+
+#padrinhos .left { float:left; width: 50%;}
+#padrinhos .right { float:right; width: 50%;}
+
+#mais-padrinhos { width: 200px}
+
+#o-casamento h2 { font:35px cinzelregular; color:#8f5995;padding: 0 0 10px; }
+#o-casamento { background:url(../img2/bg-casamento.jpg) repeat; padding:60px 0; font:17px/28px latoregular; color:#535353;text-align: justify; }
+#o-casamento .left { width: 550px; float: left;}
+#o-casamento .right { float:right;}
+
+.padrinhos-em-breve { text-align: center; padding: 80px 0 130px; font:35px cinzelregular; color:#8f5995;}
+
+#rodape { width: 100%; height: 183px; background: url(../img2/bg-rodape.jpg) repeat; text-align: center;}
+#rodape img { text-align: center; margin: 20px 0 0 0;}
+
+#pais,#irmas { margin: 0 auto;
+               padding-top: 60px;
+               width: 1160px;    
+               font-family: latoregular;
+}
+
+
+
+
+#pais .dir { float: right; width: 48%; padding-bottom: 30px; border-right: #8f5995 solid 2px;}
+#pais .esq { float: right; width: 48%; padding-bottom: 30px;}
+#pais h2 , #irmas h2{ font:45px cinzelregular; color:#8f5995;text-align: center;padding: 30px 0;}
+#pais img { display: block; margin: 0 auto; text-align: center;}
+
+#pais .texto {padding: 30px 30px 0; font-size: 15px; color:#7a7a7a; line-height: 22px; display:none;}
+#pais .texto p {padding: 0 0 5px 0;}
+#pais a { text-align: center; display: block; color:#7a7a7a; font-size: 15px;}
+#pais a:hover { text-decoration: underline;}
+
+#padrinhos .texto {padding: 30px 30px 0; font-size: 15px; color:#7a7a7a; line-height: 22px; display:none;}
+#padrinhos .texto p {padding: 0 0 5px 0;}
+#padrinhos a { text-align: center; display: block; color:#7a7a7a; font-size: 15px; font-family: latoregular;}
+#padrinhos a:hover { text-decoration: underline;}
+
+#contato {margin:0 auto;width: 1160px;}
+#contato h2 {
+    color: #8f5995;
+    font: 35px cinzelregular;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#lista-de-presentes {margin:0 auto;width: 1160px; padding-bottom: 30px;}
+#lista-de-presentes h2 {
+    color: #8f5995;
+    font: 35px cinzelregular;
+    padding: 30px 0;
+    text-align: center;
+}
+
+
+#irmas .img { text-align: center;}
+#irmas img { padding: 0 85px;}
+
+#irmas a { text-align: center; display: block; color:#7a7a7a; font-size: 16px;}
+#irmas a:hover { text-decoration: underline;}
+
+#irmas .texto {  font-family: latoregular; color:#7a7a7a; font-size:14px; line-height: 20px; text-align: center; display: none; }
+#irmas .texto p {  margin-bottom: 20px}
+
+#sobre-o-casal a {   position: relative;
+                     top: -22px;}
+
+#sobre-o-casal a:hover { text-decoration: underline}
+
+#galeria-dani, #galeria-turra { display: none;}
